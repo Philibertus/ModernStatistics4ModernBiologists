@@ -75,3 +75,21 @@ We can also assign/reserve certain outcomes to be in the space of expected value
 genotypesA <- c("AA", "Aa")
 genotypesAF <- factor(genotypesA, levels = c("AA", "Aa", "aa"))
 ```
+
+**1.3.1 Bernoulli trials**
+
+A Bernoulli trail is a model of an event happening with certain probability (or not) using a so-called Bernoulli variable. In this example we will look at tossing a coin.
+
+Let's simulate a sequence of 15 fair coin tosses. I.E, to get the outcome of 15 Bernoulli trails with a fair coin (equal probability for head or tail) we write:
+
+```{r}
+rbinom(15, prob = 0.5, size = 1)
+```
+
+**15**: number of trials/coin tosses\
+**0.5**: probability of success\
+**1:** the size of an individual trial (i.e. each individual coin toss is one trial)
+
+```{r}
+
+```
